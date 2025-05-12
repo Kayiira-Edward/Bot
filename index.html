@@ -10,13 +10,13 @@
 <body>
     <!-- header-with-nav -->
     <header>
-        <div class="container1">
+        <div class="container1" id="top">
             <img src="photos/head1.PNG" alt="logo" class="logo">
 
             <nav>
                 <ul>
-                    <li><a href="#"><span>Features</span></a></li>
-                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#feature"><span>Features</span></a></li>
+                    <li><a href="#how">How It Works</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
@@ -42,27 +42,27 @@
         </div>
      </section>
      <!-- key-features -->
-      <section class="key-features">
+      <section class="key-features" id="feature">
         <div class="container">
             <h2>Key Features</h2>
-            <div class="feature-grid">
+            <div class="features-grid">
                 <div class="feature-item">
-                    <!-- <img src="photos/oneToOne.png" alt=""> -->
+                    <i class="fa-solid fa-message"></i>
                     <h3>Smart Conversations</h3>
                     <p>Understands and responds naturally to user queries</p>
                 </div>
                 <div class="feature-item">
-                    <!-- <img src="photos/oneToOne.png" alt=""> -->
+                    <i class="fa-solid fa-chart-simple"></i>
                     <h3>Analytics Dashboard</h3>
                     <p>Track bot performance and user engagement.</p>
                 </div>
                 <div class="feature-item">
-                    <!-- <img src="photos/oneToOne.png" alt=""> -->
+                    <i class="fa-solid fa-gear"></i>
                     <h3>Easy Integration</h3>
                     <p>Embed on any website with a single line of code.</p>
                 </div>
                 <div class="feature-item">
-                    <!-- <img src="photos/oneToOne.png" alt=""> -->
+                    <i class="fa-solid fa-lock"></i>
                     <h3>Privacy Focused</h3>
                     <p>Secure and GDPR-compliant by default.</p>
                 </div>
@@ -70,22 +70,22 @@
         </div>
       </section>
 
-      <section class="how-it-works">
+      <section class="how-it-works" id="how">
         <div class="container">
             <h2>How It Works</h2>
             <div class="steps">
                 <div class="step">
-                    <!-- <img src="photos/oneToOne.png" alt=""> -->
+                    <i class="fa-solid fa-user"></i>
                     <h3>Step 1: Sign Up</h3>
                     <p>Create an account and set up your bot.</p>
                 </div>
                 <div class="step">
-                    <!-- <img src="photos/typing.png" alt=""> -->
+                    <i class="fa-solid fa-clipboard"></i>
                     <h3>Step 2: Customize</h3>
                     <p>Tailor the bot's responses and appearance.</p>
                 </div>
                 <div class="step">
-                    <!-- <img src="photos/hi.png" alt=""> -->
+                    <i class="fa-solid fa-code"></i>
                     <h3>Step 3: Embed</h3>
                     <p>Add the bot to your website with a simple code snippet.</p>
                 </div>
@@ -104,14 +104,19 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Terms</a></li>
+                    <li><a href="#feature">Features</a></li>
+                    <li><a href="#how">How It Works</a></li>
+                    <li><a href="#top">Terms</a></li>
                 </ul>
             </nav>
         </div>
       </footer>
 
+    <a href="#" id="chat-button" title="Open Chat">
+        <img src="photos/head1.PNG" alt="">
+    </a>
+
+      <script src="https://kit.fontawesome.com/2ebd5005a1.js" crossorigin="anonymous"></script>
       <script src="script.js"></script>
 </body>
 </html>
