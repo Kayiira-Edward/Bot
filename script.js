@@ -1,16 +1,19 @@
-// script.js
+const openMenu = document.querySelector('.open-menu');
+  const closeMenu = document.querySelector('.close-menu');
+  const nav = document.querySelector('header nav');
 
-// Select the menu and buttons
-const menu = document.getElementById('nav');
-const openMenuButton = document.getElementById('open-menu');
-const closeMenuButton = document.getElementById('close-menu');
+  openMenu.addEventListener('click', () => {
+    nav.classList.add('show');
+  });
 
-// Function to show the menu
-openMenuButton.addEventListener('click', () => {
-    menu.style.display = 'block';
-});
+  closeMenu.addEventListener('click', () => {
+    nav.classList.remove('show');
+  });
+  document.addEventListener('click', function (event) {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickOnOpenIcon = openMenu.contains(event.target);
 
-// Function to hide the menu
-closeMenuButton.addEventListener('click', () => {
-    menu.style.display = 'none';
-});
+    if (!isClickInsideNav && !isClickOnOpenIcon) {
+      nav.classList.remove('show');
+    }
+  });

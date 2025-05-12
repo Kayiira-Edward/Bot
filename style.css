@@ -74,7 +74,7 @@ header .cta .button:hover{
 }
 
 header .fa-solid{
-    display: none; /* Hide the icon by default */
+    display: none; 
 }
 header h1{
     font-weight: 10;
@@ -97,23 +97,21 @@ header h1{
         top: 10px;
         right: 0px;
         z-index: 1001;
-        /* nav to come from right animation */
-        transform: translateX(100%); /* Start off-screen */
+        transform: translateX(100%); 
         animation: none;
-        transition: transform 0.3s ease-in-out; /* Smooth slide transition */
+        transition: transform 0.3s ease-in-out; 
         overflow-y: auto;
         display: block;
-        /* display: none; */
     }
     header nav.show {
-        transform: translateX(0); /* Slide it into view */
+        transform: translateX(0); 
     }
     header nav ul{
         color: white;
         height: 300px;
         background-color: #f88205;
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: left; /* Center the items */
+        flex-direction: column; 
+        align-items: left;
         text-align: left;
         padding: 20px;
         border-radius: 10px;
@@ -124,8 +122,8 @@ header h1{
         transition: color O.3s ease;
     }
     header nav ul li {
-        margin-left: 0; /* Remove left margin */
-        margin-bottom: 20px; /* Add space between menu items */
+        margin-left: 0;
+        margin-bottom: 20px; 
     }
     header nav ul li a{
         color: #ffffff;
@@ -134,7 +132,7 @@ header h1{
         margin-top: 10px;
     }
     header .fa-solid{
-        display: block; /* Hide the icon by default */
+        display: block; 
     }
     .close-menu{
         font-size: 20px;
@@ -143,14 +141,13 @@ header h1{
     }
     .open-menu {
         font-size: 30px;
-        /* margin-bottom: 20px; */
         text-align: right;
         color: #ec7c04;
         display: block;
         cursor: pointer;
     }
     .cta{
-        display: none; /* Hide the button by default */
+        display: none; 
     }
 }
 /* hero */
@@ -190,28 +187,28 @@ header h1{
     height: auto;
     display: block;
 }
-/* small screen */
-/* Responsive adjustments for hero section */
+
+
 @media (max-width: 768px) {
     .hero .container {
-        flex-direction: column; /* Stack content and image */
-        text-align: center; /* Center the content */
+        flex-direction: column; 
+        text-align: center; 
     }
     .hero{
         padding-top: 5px
     }
     .hero-content {
-        padding-right: 0; /* Remove right padding */
-        margin-bottom: 30px; /* Add space between content and image */
+        padding-right: 0; 
+        margin-bottom: 30px;
     }
 
     .hero-content h1 {
-        font-size: 2.5em; /* Adjust font size */
+        font-size: 2.5em; 
     }
 
     .hero-buttons {
         display: flex;
-        flex-direction: column; /* Stack buttons */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -219,14 +216,13 @@ header h1{
         margin-right: 0;
         margin-bottom: 10px; 
         font-size: 13px;
-        /* Add space between buttons */
-        width: 65px; /* Make buttons full width */
+        width: 65px; 
         text-align: center;
     }
 
     .hero-image {
-        max-width: 80%; /* Adjust image width */
-        margin: 0 auto; /* Center the image */
+        max-width: 80%; 
+        margin: 0 auto; 
     }
 }
 /* buttons */
@@ -310,7 +306,7 @@ header h1{
 .feature-item p{
     color: #666;
 }
-/* how it works */
+
 .how-it-works{
     padding: 30px 0;
     background-color: #fff;
@@ -344,11 +340,11 @@ header h1{
 .step p{
     color: #666;
 }
-/* Responsive adjustments for how-it-works section */
+
 @media (max-width: 768px) {
     .how-it-works .steps {
-        flex-direction: column; /* Stack steps vertically */
-        align-items: center; /* Center the steps */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .step {
@@ -413,16 +409,16 @@ footer p{
     font-size: 0.9em;
     color: #aaa;
 }
-/* Responsive adjustments for footer */
+
 @media (max-width: 768px) {
     footer .container {
-        flex-direction: column; /* Stack navigation and social icons */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
     }
 
     footer nav ul {
-        flex-direction: column; /* Stack navigation links */
+        flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
     }
