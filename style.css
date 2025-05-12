@@ -98,13 +98,15 @@ header h1{
         right: 0px;
         z-index: 1001;
         /* nav to come from right animation */
-        animation: slide-in 0.5s ease-in-out;
+        transform: translateX(100%); /* Start off-screen */
+        animation: none;
         transition: transform 0.3s ease-in-out; /* Smooth slide transition */
         overflow-y: auto;
+        display: block;
         /* display: none; */
     }
     header nav.show {
-        transform: translateX(100%); /* Slide it into view */
+        transform: translateX(0); /* Slide it into view */
     }
     header nav ul{
         color: white;
