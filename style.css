@@ -13,147 +13,75 @@ html{
     margin: 0 auto;
     padding: 20px;
 }
-header{
-    background-color: #f0efef;
-    padding: 0px 10px;
-    box-shadow: 0 20px 4px rgb(0, 0, 0, 0.1);
-}
-header:hover{
-    background-color: #f0efef;
-    box-shadow: 0 20px 4px rgb(239, 101, 15);
-}
-header .container1{
+/*  */
+nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
-header .logo{
-    border-radius: 50%;
+.logo{
     width: 50px;
 }
-header nav ul{
+nav ul li{
+    display: inline-block;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    margin: 10px 20px;
 }
-header nav ul li{
-    margin-left: 20px;
-    
-}
-header nav ul li span{
-    color: #f88205;
-    transition: color O.3s ease;
-}
-header nav ul li span:hover{
-    color: #584f45c0;
-
-}
-header nav ul li a{
-    color: #584f45c0;
+nav ul li a{
+    color: #ec7c04;
     text-decoration: none;
-    transition: color O.3s ease;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
-header nav ul li a:hover{
+nav .fa-solid{
+    display: none;
+}
+#open{
+    margin-right: 30px;
     color: #ec7c04;
 }
-header .cta .button{
-    margin-left: 20px;
-    color: rgb(255, 255, 255);
-    background-color: #f88205;
-    border-radius: 30px;
-    transition: color O.3s ease;
-}
-header .cta .button:hover{
-    margin-left: 20px;
-    color: rgb(255, 255, 255);
-    background-color: #f88205;
-    border-radius: 30px;
-    border: solid 2px #ec7c04;
-    border: 2px solid #ec7c04;
-}
-
-header .fa-solid{
-    display: none; 
-}
-header h1{
-    font-weight: 10;
-}
-@media (max-width: 768px) {
-    header .container1{
-        display: flex;
-    }
-    header h3{
+/* -----------------css */
+@media only screen and (max-width: 600px) {
+    nav .fa-solid{
         display: block;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
     }
-    header .logo{
-        width: 40px;
+    nav ul{
+        background: #ec7c04;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 100px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: all 0.5s ease;
     }
-    header nav{
-        height: 300px;
-        border-radius: 10px;
-        position: absolute;
-        width: 50%;
-        top: 10px;
-        right: 0px;
-        z-index: 1001;
-        transform: translateX(100%); 
-        animation: none;
-        transition: transform 0.3s ease-in-out; 
-        overflow-y: auto;
-        display: block;
-    }
-    header nav.show {
-        transform: translateX(0); 
-    }
-    header nav ul{
-        color: white;
-        height: 300px;
-        background-color: #f88205;
-        flex-direction: column; 
-        align-items: left;
+    nav ul li a{
+        color: #ffffff;
+        font-size: 15px;
         text-align: left;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    header nav ul li span{
-        color: #ffffff;
-        transition: color O.3s ease;
-    }
-    header nav ul li {
-        margin-left: 0;
-        margin-bottom: 20px; 
-    }
-    header nav ul li a{
-        color: #ffffff;
-        text-decoration: none;
-        transition: color O.3s ease;
-        margin-top: 10px;
-    }
-    header .fa-solid{
-        display: block; 
-    }
-    .close-menu{
-        font-size: 20px;
-        margin-bottom: 20px;
-        text-align: right;
-    }
-    .open-menu {
-        font-size: 30px;
-        text-align: right;
-        color: #ec7c04;
+    nav ul li{
         display: block;
-        cursor: pointer;
+        margin: 25px;
+        list-style:circle;
+        color: #ffffff;
     }
-    .cta{
-        display: none; 
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer; 
+        color: #ffffff;
     }
 }
 /* hero */
 .hero{
     background-color: #f0efef;
-    padding: 50px 0;
+    padding: 0 0 10px 0;
 }
 .hero .container{
     display: flex;
@@ -409,7 +337,7 @@ footer p{
     font-size: 0.9em;
     color: #aaa;
 }
-
+/* Responsive adjustments for footer */
 @media (max-width: 768px) {
     footer .container {
         flex-direction: column; 
@@ -418,7 +346,7 @@ footer p{
     }
 
     footer nav ul {
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
         margin-bottom: 20px;
     }
