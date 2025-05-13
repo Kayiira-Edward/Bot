@@ -16,3 +16,24 @@ function outsideClickListener(event) {
         closemenu();
     }
 }
+
+
+const chatBtn = document.getElementById("chat-button");
+  const chatPopup = document.getElementById("chat-popup");
+  const closeBtn = document.getElementById("close-chat");
+
+  chatBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    chatPopup.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", function() {
+    chatPopup.style.display = "none";
+  });
+
+  // Hide chat when clicking outside
+  document.addEventListener("click", function(event) {
+    if (!chatPopup.contains(event.target) && !chatBtn.contains(event.target)) {
+      chatPopup.style.display = "none";
+    }
+  });
